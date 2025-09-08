@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>AndOS - Sistema Operacional Web | Anderson Costa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f7f7f7; color: #222; margin: 0; }
+    header { background: #222; color: #fff; padding: 2em 1em; text-align: center; }
+    h1 { margin: 0; }
+    .subtitle { font-size: 1.2em; margin-top: 0.5em; }
+    section { max-width: 800px; margin: 2em auto; background: #fff; padding: 2em; border-radius: 10px; box-shadow: 0 2px 12px #eee; }
+    h2 { color: #0072b1; margin-top: 0; }
+    h3 { color: #0072b1; }
+    .links a { margin-right: 1em; color: #0072b1; text-decoration: none; }
+    .back-link { 
+      display: inline-block; 
+      margin-bottom: 1em; 
+      padding: 0.5em 1em; 
+      background: #0072b1; 
+      color: #fff; 
+      text-decoration: none; 
+      border-radius: 5px; 
+    }
+    .back-link:hover { background: #005a8b; }
+    .feature-box { 
+      background: #eef6fa; 
+      border-radius: 6px; 
+      padding: 1.5em; 
+      margin: 1em 0; 
+      border-left: 4px solid #0072b1; 
+    }
+    .tech-stack { 
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 0.5em; 
+      margin: 1em 0; 
+    }
+    .tech-tag { 
+      background: #0072b1; 
+      color: #fff; 
+      padding: 0.3em 0.8em; 
+      border-radius: 20px; 
+      font-size: 0.9em; 
+    }
+    .architecture-grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+      gap: 1em; 
+      margin: 1em 0; 
+    }
+    .component { 
+      background: #f8f9fa; 
+      border: 2px solid #dee2e6; 
+      border-radius: 8px; 
+      padding: 1em; 
+      text-align: center; 
+    }
+    .component h4 { 
+      margin-top: 0; 
+      color: #0072b1; 
+    }
+    .install-step { 
+      background: #f8f9fa; 
+      border-left: 4px solid #28a745; 
+      padding: 1em; 
+      margin: 0.5em 0; 
+    }
+    .install-step code { 
+      background: #e9ecef; 
+      padding: 0.2em 0.4em; 
+      border-radius: 3px; 
+      font-family: 'Courier New', monospace; 
+    }
+    ul { padding-left: 1.2em; }
+    @media (max-width: 820px) { 
+      section { padding: 1em; } 
+      .architecture-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AndOS</h1>
+    <div class="subtitle">
+      Sistema Operacional Web Inovador<br>
+      Por Anderson Costa
+    </div>
+  </header>
+
+  <section>
+    <a href="index.html" class="back-link">← Voltar ao Portfólio</a>
+    
+    <h2>Visão Geral do Projeto</h2>
+    <p>
+      O <strong>AndOS</strong> é um projeto ambicioso que visa recriar a funcionalidade de um sistema operacional utilizando tecnologias web modernas. Observando a migração das tecnologias do mundo desktop para a web, este projeto combina desenvolvimento front-end e back-end para simular a operação de um OS em alto nível.
+    </p>
+    
+    <div class="feature-box">
+      <h3>🎯 Objetivo Principal</h3>
+      <p>Criar um sistema operacional inovador focado em automação e integração de processos, delegando responsabilidades de baixo nível (drivers, kernels, acesso direto à memória) ao navegador do usuário, enquanto implementa toda a lógica de sistema em linguagens de alto nível.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Arquitetura do Sistema</h2>
+    <p>O AndOS é estruturado em múltiplos componentes modulares que trabalham em conjunto:</p>
+    
+    <div class="architecture-grid">
+      <div class="component">
+        <h4>AndOS.Front-end</h4>
+        <p>Interface de usuário responsiva construída com tecnologias web modernas, fornecendo a experiência visual do sistema operacional.</p>
+      </div>
+      <div class="component">
+        <h4>AndOS.Back-end</h4>
+        <p>Servidor robusto que gerencia lógica de negócios, autenticação, e comunicação entre componentes do sistema.</p>
+      </div>
+      <div class="component">
+        <h4>AndOS.Core</h4>
+        <p>Núcleo do sistema contendo funcionalidades essenciais, gerenciamento de processos e APIs centrais.</p>
+      </div>
+      <div class="component">
+        <h4>AndOS.Shared</h4>
+        <p>Biblioteca compartilhada com utilitários, modelos de dados e funcionalidades comum entre os componentes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tecnologias Utilizadas</h2>
+    <div class="tech-stack">
+      <span class="tech-tag">.NET 8 Core</span>
+      <span class="tech-tag">ASP.NET Core</span>
+      <span class="tech-tag">Entity Framework</span>
+      <span class="tech-tag">TypeScript</span>
+      <span class="tech-tag">JavaScript</span>
+      <span class="tech-tag">HTML5/CSS3</span>
+      <span class="tech-tag">Docker</span>
+      <span class="tech-tag">Microserviços</span>
+      <span class="tech-tag">APIs RESTful</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Características Principais</h2>
+    <ul>
+      <li><strong>Interface Web Nativa:</strong> Sistema operacional completamente baseado em tecnologias web</li>
+      <li><strong>Arquitetura Modular:</strong> Componentes independentes e escaláveis</li>
+      <li><strong>Automação de Processos:</strong> Foco em integração e automatização de workflows</li>
+      <li><strong>Soluções Escaláveis:</strong> Projetado para crescer com as necessidades do usuário</li>
+      <li><strong>Segurança Robusta:</strong> Implementação de práticas modernas de segurança</li>
+      <li><strong>Cross-Platform:</strong> Funciona em qualquer dispositivo com navegador moderno</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Instalação e Configuração</h2>
+    <p>Para configurar o ambiente de desenvolvimento do AndOS:</p>
+    
+    <div class="install-step">
+      <strong>Passo 1:</strong> Clone o repositório principal<br>
+      <code>git clone https://github.com/AndersonCosta28/AndOS.git</code>
+    </div>
+    
+    <div class="install-step">
+      <strong>Passo 2:</strong> Navegue para o diretório e atualize os submódulos<br>
+      <code>cd AndOS</code><br>
+      <code>git submodule update --init --recursive</code>
+    </div>
+    
+    <div class="install-step">
+      <strong>Passo 3:</strong> Configure cada componente seguindo as instruções específicas de cada submódulo
+    </div>
+  </section>
+
+  <section>
+    <h2>Status Atual e Roadmap</h2>
+    <div class="feature-box">
+      <h3>📈 Status Atual</h3>
+      <p>O projeto está em desenvolvimento ativo, com arquitetura base implementada e componentes principais em construção. Atualmente focado na consolidação da estrutura modular e implementação das funcionalidades core.</p>
+    </div>
+    
+    <h3>Próximos Passos:</h3>
+    <ul>
+      <li>Finalização da interface de usuário principal</li>
+      <li>Implementação do sistema de gerenciamento de processos</li>
+      <li>Desenvolvimento de aplicações nativas do sistema</li>
+      <li>Sistema de plugins e extensões</li>
+      <li>Documentação abrangente e tutoriais</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Links e Recursos</h2>
+    <div class="links">
+      <a href="https://github.com/AndersonCosta28/AndOS" target="_blank">🔗 Repositório Principal</a>
+      <a href="https://github.com/AndersonCosta28/AndOS.Front-end" target="_blank">🎨 Front-end</a>
+      <a href="https://github.com/AndersonCosta28/AndOS.Back-end" target="_blank">⚙️ Back-end</a>
+      <a href="https://github.com/AndersonCosta28/AndOS.Core" target="_blank">🧠 Core</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contribuição</h2>
+    <p>
+      Este projeto representa uma visão inovadora para sistemas operacionais web. Se você tem interesse em contribuir com ideias, código ou feedback, sinta-se à vontade para entrar em contato ou criar issues no repositório do GitHub.
+    </p>
+    
+    <p style="text-align: center; margin-top: 2em;">
+      <a href="index.html" class="back-link">← Voltar ao Portfólio Principal</a>
+    </p>
+  </section>
+
+  <div style="text-align: center; margin: 2em 0 1em 0; color: #888; font-size: 0.9em;">
+    &copy; 2025 Anderson Costa - AndOS Project
+  </div>
+</body>
+</html>
